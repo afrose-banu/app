@@ -1,5 +1,5 @@
 import tweepy
-import os # operating system library
+import os #  operating system library
 
 def create_api():
   consumer_key = os.getenv('consumer_key')
@@ -32,5 +32,5 @@ while True:
     user = api.get_user('AfroseBanu6')
     api.update_profile(name=f'AfroseBanu|{follower_count(user)} Followers')
     print(f'Updating Twitter Name : AfroseBanu|{follower_count(user)} Followers')
-    print('Waiting to refresh')
+    print('Waiting to refresh to start')
     time.sleep(60)
